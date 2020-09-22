@@ -1,0 +1,1 @@
+[Evaluate order](https://courses.cs.washington.edu/courses/cse505/99au/functional/applicative-normal.pdf)
