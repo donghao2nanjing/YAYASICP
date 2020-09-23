@@ -1,0 +1,25 @@
+#lang sicp
+
+(define (count-change amount) (cc amount 5))
+
+(define (cc amount kinds_of_coins)
+    (cond ((= amount 0) 1)
+    ((or (< amount 0) (= kinds_of_coins 0)) 0)
+    (else (+ 
+        (cc amount (- kinds_of_coins 1))
+        (cc (- amount (first-denomination
+            kinds_of_coins))
+            kinds_of_coins
+        )))))
+
+(define (first-denomination kinds_of_coins)
+    (cond ((= kinds_of_coins 1) 1)
+        ((= kinds_of_coins 2) 5)
+        ((= kinds_of_coins 3) 10)
+        ((= kinds_of_coins 4) 25)
+        ((= kinds_of_coins 5) 50)
+    )
+)
+
+(count-change 100)
+(count-change 5)
