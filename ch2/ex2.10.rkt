@@ -46,7 +46,7 @@
 
 (define (div-interval x y) 
     (if (= (contains_zero y) 0) 
-        (error "interval y spans 0")
+        (error "interval y spans 0: " y)
     )
     (mul-interval x
         (make-interval (/ 1.0 (upper-bound y)) (/ 1.0 (lower-bound y)))
@@ -65,7 +65,7 @@
         (x_up (upper-bound x))
         (y_up (upper-bound y))
     )
-    (make-interval (- x_low y_low) (- x_up y_up))
+    (make-interval (- x_up y_low) (- x_low y_up))
     )
 )
 

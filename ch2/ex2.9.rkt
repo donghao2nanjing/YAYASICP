@@ -54,7 +54,7 @@
         (x_up (upper-bound x))
         (y_up (upper-bound y))
     )
-    (make-interval (- x_low y_low) (- x_up y_up))
+    (make-interval (- x_up y_low) (- x_low y_up))
     )
 )
 
