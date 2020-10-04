@@ -1,4 +1,6 @@
-# sicp
+# YAYASICP
+
+Yet another yet another SICP exercise repository.
 
 This repository contains code for learning [*Structure and Interpreter of Computer Programs*](https://web.mit.edu/alexmv/6.037/sicp.pdf).
 
@@ -11,3 +13,7 @@ VScode can also be used with [Magic Racket](https://github.com/Eugleo/magic-rack
 ## Some difficult problems
 
 [Exercise 2.14-2.16](http://community.schemewiki.org/?sicp-ex-2.14-2.15-2.16)
+
+## Some discussions
+
+[Programming by Poking](http://lambda-the-ultimate.org/node/5335?utm_source=wechat_session&utm_medium=social&utm_oi=28579488333824)
