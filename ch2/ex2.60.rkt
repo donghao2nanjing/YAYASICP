@@ -35,3 +35,9 @@
 
 (union-set s1 s2)
 (intersection-set s1 s2)
+
+(define s3 '(1 2 3 4 3 4))
+(define s4 '(3 4 3 5 6))
+
+(union-set s3 s4)
+(intersection-set s3 s4)
